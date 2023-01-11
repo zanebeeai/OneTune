@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } 
     document.getElementById('login').addEventListener('click', function(e) {
       e.preventDefault();
-      fetch('spotifyRedirectURI')
+      fetch('https://accounts.spotify.com/en/authorize?client_id=0f688660285e40e6acb7df830b0663a6&response_type=code&redirect_uri=https%3A%2F%2Fzanzilla22.github.io%2FOneTune%2FspotifyAudioAnalysis%2Fpublic%2Fanalysis.html')
       .then(e => e.json())
       .then(data => {
         window.location = data.redirectUri;
