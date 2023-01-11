@@ -1,10 +1,5 @@
 <html>  
-<div class="form-group">
-    <label for="spUsername">Username</label>
-    <input type="text" class="form-control" id="spUsername" placeholder="spotify username">
-  </div>
-  <button type="submit" class="btn btn-primary" onclick="usernamePassthrough()">Submit</button>
-    <script>
+        <script>
         function usernamePassthrough() {
  let obj = {
   "username": document.getElementById("spUsername").value
@@ -13,4 +8,10 @@
 
 console.log(JSON.stringify(obj))
     </script>
+<div class="form-group">
+    <label for="spUsername">Username</label>
+    <input type="text" class="form-control" id="spUsername" placeholder="spotify username">
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="usernamePassthrough()">Submit</button>
+
 </html>
