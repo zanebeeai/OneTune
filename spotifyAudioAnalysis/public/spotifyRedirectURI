@@ -1,1 +1,3 @@
-https://example.com
+{
+  "redirectUri": "https://accounts.spotify.com/authorize?client_id=750db5dfc1e6406a8c1dacb791e8eb0a&response_type=token&scope=streaming%20user-read-birthdate%20user-read-email%20user-read-private%20user-modify-playback-state&redirect_uri=https%3A%2F%2Fspotify-audio-analysis.glitch.me%2F&show_dialog=true"
+}
