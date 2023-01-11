@@ -1,11 +1,21 @@
 <html>  
 <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="spUsername">Username</label>
+    <input type="text" class="form-control" id="spUsername" placeholder="spotify username">
   </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>\
+  <button type="submit" class="btn btn-primary" onclick="usernamePassthrough()">Submit</button>
+    <p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script><br><script><br />
+    function usernamePassthrough() {</p>
+<p>        const username= document.getElementById("spUsername").value;</p>
+<p>        const dict_values = {username} //Pass the javascript variables to a dictionary.<br />
+        const s = JSON.stringify(dict_values); // Stringify converts a JavaScript object or value to a JSON string<br />
+        console.log(s); // Prints the variables to console window, which are in the JSON format<br />
+        window.alert(s)<br />
+        $.ajax({<br />
+            url:"/test",<br />
+            type:"POST",<br />
+            contentType: "application/json",<br />
+            data: JSON.stringify(s)});</p>
+<p>}</p>
+<p></script></p>
 </html>
