@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } 
     document.getElementById('login').addEventListener('click', function(e) {
       e.preventDefault();
-      fetch('http://spotify-audio-analysis.glitch.me/spotifyRedirectURI')
+      fetch('spotifyRedirectURI')
       .then(e => e.json())
       .then(data => {
         window.location = data.redirectUri;
