@@ -14,18 +14,3 @@
 console.log(JSON.stringify(obj))
     </script>
 </html>
-
-<p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script><br><script><br />
-    function usernamePassthrough() {</p>
-<p>        const username= document.getElementById("spUsername").value;</p>
-<p>        const dict_values = {username} //Pass the javascript variables to a dictionary.<br />
-        const s = JSON.stringify(dict_values); // Stringify converts a JavaScript object or value to a JSON string<br />
-        console.log(s); // Prints the variables to console window, which are in the JSON format<br />
-        window.alert(s)<br />
-        $.ajax({<br />
-            url:"/test",<br />
-            type:"POST",<br />
-            contentType: "application/json",<br />
-            data: JSON.stringify(s)});</p>
-<p>}</p>
-<p></script></p>
